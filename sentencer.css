@@ -1,0 +1,120 @@
+@import url(http://fonts.googleapis.com/css?family=Carrois+Gothic+SC);
+@import url(http://fonts.googleapis.com/css?family=Rokkitt:400,700);
+
+* {
+  box-sizing: border-box;
+}
+
+.palette1 {
+  background-color: rgb(255, 229, 25);
+}
+.palette2 {
+  background-color: rgb(178, 18, 98);
+}
+.palette3 {
+  background-color: rgb(255, 0, 127);
+}
+.palette4 {
+  background-color: rgb(20, 181, 204);
+}
+.palette5 {
+  background-color: rgb(9, 158, 178);
+}
+
+.sentencer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.sentencer .rendering {
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
+  height: 120px;
+  text-align: center;
+}
+
+.sentencer .word {
+  font-family: 'Rokkitt', serif;
+  font-size: 2em;
+  padding: 0.5em 1em;
+  color: white;
+  margin: 0 0.2em;
+  border-radius: 2px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  -webkit-user-select: text;
+  user-select: text;
+  z-index: 1;
+}
+
+.sentencer .word:first-child {
+  text-transform: capitalize;
+}
+
+.sentencer .word DIV {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.sentencer .word.background {
+  position: absolute;
+  -webkit-transform: scale(0.3);
+  opacity: 0.1;
+  display: inline-block;
+  z-index: 0;
+}
+
+.sentencer NAV {
+  position: absolute;
+  bottom: 1em;
+  text-align: center;
+  width: 100%;
+  z-index: 2;
+}
+
+.sentencer A {
+  text-decoration: none;
+  font-family: 'Carrois Gothic SC', sans-serif;
+  font-size: 1.2em;
+  color: rgb(61,28,0);
+  opacity: 0.5;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  padding: 0.5em 1em;
+  -webkit-transition: all 0.13s;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.sentencer A:hover, .sentencer NAV A:focus {
+  opacity: 1;
+  border-color: rgba(61,28,0,0.5);
+}
+
+.sentencer A:active {
+  color: rgb(250,42,0);
+  border-color: rgb(250,42,0,0.5);
+}
+
+#goFullscreen { 
+  position: absolute;
+  bottom: 0.1em;
+  right: 0.2em;
+  font-size: 0.9em;
+  z-index: 3;
+}

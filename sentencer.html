@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+  <script src="data.js"></script>
+  <script src="sentencer.js"></script>
+  <link href="sentencer.css" rel="stylesheet">
+</head>
+<body>
+  <section class="sentencer" id="container">
+    <nav>
+      <a href="" id="generateSentence">Generate</a>
+    </nav>
+    <a href="" id="goFullscreen">Fullscreen</a>
+  </section>
+  <script>
+    sentencer.boot(
+      document.getElementById('container'),
+      document.getElementById('generateSentence'),
+      document.getElementById('goFullscreen'),
+      {
+        animatedBackground: true,
+        autoGenerateEverySecs: 10
+      }
+      );
+  </script>
+</body>
+</html>
